@@ -4,11 +4,11 @@ import { IconCheck } from "@tabler/icons-react";
 
 function ArticleCard({ title, description, author, date }) {
   return (
-    <div className="flex flex-col shadow-md mt-[1rem] rounded-lg h-fit">
+    <div className="flex flex-col shadow-md mt-[1rem] rounded-lg">
       <img src={images.PostImage} alt="post-image" />
       <div className="px-[2rem] mt-[1rem]">
         <h2 className="text-dark-soft">{title}</h2>
-        <p className="text-dark-light h-20 overflow-hidden">{description}</p>
+        <p className="text-dark-light">{description}</p>
         <button className="text-primary">Read More</button>
       </div>
       <div className="mt-[1rem] flex flex-row justify-between p-[2rem] items-center">
